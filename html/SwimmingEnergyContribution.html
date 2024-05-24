@@ -1,0 +1,857 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Contribución de los Sistemas Energéticos en Natación &#8212; My Jupyter Book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=87e54e7c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'SwimmingEnergyContribution';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">My Jupyter Book</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Contribución de los Sistemas Energéticos en Natación
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/SwimmingEnergyContribution.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Contribución de los Sistemas Energéticos en Natación</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemas-energeticos">Sistemas Energéticos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#controversia">Controversia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soluciones">¿Soluciones?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-1-discrepancias">1️⃣ Problema 1: discrepancias</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#solucionado">✅ SOLUCIONADO</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-2-esfuerzos-de-diferente-duracion">2️⃣ Problema 2: esfuerzos de diferente duración</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">✅ SOLUCIONADO</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-3-diferentes-estilos">3️⃣ Problema 3: diferentes estilos</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">✅ SOLUCIONADO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicaciones-practicas">Aplicaciones prácticas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitaciones">⛔ Limitaciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones">Conclusiones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliografia">Bibliografía</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="contribucion-de-los-sistemas-energeticos-en-natacion">
+<h1>Contribución de los Sistemas Energéticos en Natación<a class="headerlink" href="#contribucion-de-los-sistemas-energeticos-en-natacion" title="Link to this heading">#</a></h1>
+<p>El rendimiento en natación depende, principalmente, de la potencia metabólica que los deportistas son capaces de producir en competición y del coste energético que les supone nadar a máxima velocidad. Es decir, una mayor producción de energía por unidad de tiempo y un menor coste energético para desplazarse se traduce generalmente en un mejor resultado. Aquí vamos a hablar sobre el primer punto: la producción de energía.</p>
+<p>Lo primero que debemos preguntarnos es, ¿cómo obtenemos energía? Voy a intentar responder de forma muy breve:</p>
+<section id="sistemas-energeticos">
+<h2>Sistemas Energéticos<a class="headerlink" href="#sistemas-energeticos" title="Link to this heading">#</a></h2>
+<p>Existe una molécula llamada Adenosín trifosfato (ATP) que contiene gran cantidad de energía y se almacena en las células. Cuando se rompe la libera, y esa es la principal fuente de energía de la mayoría de funciones del cuerpo, incluida la contracción muscular.</p>
+<p>Hay tres caminos para obtener energía:</p>
+<ul class="simple">
+<li><p><strong>ATP-PCr</strong></p></li>
+<li><p><strong>Sistema Glucolítico</strong></p></li>
+<li><p><strong>Oxidación</strong></p></li>
+</ul>
+<p>Los primeros dos actúan sin utilizar oxígeno y conjuntamente forman lo que podemos llamar <strong>metabolismo anaeróbico</strong>, mientras que el tercero necesita oxígeno y por lo tanto comprende el <strong>metabolismo aeróbico</strong>. El cuerpo utiliza generalmente una combinación de los tres, a diferentes niveles, para alcanzar sus demandas energéticas.</p>
+<p>El sistema energético <strong>ATP-PCr</strong> lo que hace es utilizar directamente la pequeña reserva de ATP y fosfocreatina almacenadas en las células para producir energía <strong>muy</strong> rápido. El problema es que dura muy muy poquito, a los <strong>12-15 segundos</strong>, como mucho, esas reservas están prácticamente esquilmadas.</p>
+<p>El <strong>sistema glucolítico</strong> rompe moléculas de glucosa. No es capaz de producir grandes cantidades de energía, pero es <strong>rápido</strong> y utiliza un combustible disponible en más cantidad que el que usa el sistema ATP-PCr, y por lo tanto es el sistema predominante entre los <strong>15 segundos y los dos minutos</strong> de esfuerzo máximo. Este sistema es el que produce el famoso lactato, otro posible sustrato, pero no vamos a entrar en ello.</p>
+<p>Por último el <strong>sistema oxidativo</strong>, el más complejo de los tres, que rompe sustratos (carbohidratos, grasas o proteínas) con ayuda del oxígeno para producir energía. Dependiendo del sustrato es capaz de producir más energía o menos y durante más o menos tiempo.</p>
+<p>Resumiendo:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Sistema Energético</strong></p></th>
+<th class="head"><p>¿Necesita oxígeno?</p></th>
+<th class="head"><p>Potencia energética por segundo</p></th>
+<th class="head"><p>Capacidad</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ATP-PCr</p></td>
+<td><p>No</p></td>
+<td><p>10</p></td>
+<td><p>-15s</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sistema Glucolítico</p></td>
+<td><p>No</p></td>
+<td><p>5</p></td>
+<td><p>1-2 minutos</p></td>
+</tr>
+<tr class="row-even"><td><p>Sistema Oxidativo (carbos)</p></td>
+<td><p>Sí</p></td>
+<td><p>2.5</p></td>
+<td><p>90 minutos</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sistema Oxidativo (grasas)</p></td>
+<td><p>Sí</p></td>
+<td><p>1.5</p></td>
+<td><p>Días</p></td>
+</tr>
+</tbody>
+</table>
+<p>Es importante recordar que <strong>todos están activos simultáneamente</strong>, solo que en diferentes grados de prioridad dependiendo del carácter del esfuerzo y del sustrato disponible.</p>
+</section>
+<section id="controversia">
+<h2>Controversia<a class="headerlink" href="#controversia" title="Link to this heading">#</a></h2>
+<p>El nadador debe, pues, obtener energía. Mucha, cuanta más mejor, de los sistemas energéticos predominantes en su modalidad. Y ese es uno de los objetivos del entrenamiento. Si el principal sistema energético de mi disciplina es, digamos, el sistema glucolítico, ¿no deberé intentar ser capaz de maximizar la producción de energía de ese sistema en concreto que tanto voy a usar?</p>
+<p>¿Cuáles son entonces los sistemas energéticos predominantes de cada disciplina? O, más concretamente y atendiendo a los principios del entrenamiento, ¿cuánto podría contribuir cada sistema energético a un deportista concreto, en una prueba concreta? ¿Qué tiene que entrenar ese deportista? Yo me he hecho esas preguntas, y aquí os presento la polémica.</p>
+<p>Maglischo, Navarro, y un sin fin de autores reconocidos en el mundo de la natación han escrito al respecto. Esta una tabla resumen de sus resultados:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Distancia</p></th>
+<th class="head"><p>ATP-PCr   (%)</p></th>
+<th class="head"><p>S. Glucolítico (%)</p></th>
+<th class="head"><p>S. Oxidativo (%)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>50 m</p></td>
+<td><p>15-80</p></td>
+<td><p>2-80</p></td>
+<td><p>2-26</p></td>
+</tr>
+<tr class="row-odd"><td><p>100 m</p></td>
+<td><p>5-28</p></td>
+<td><p>15-65</p></td>
+<td><p>5-54</p></td>
+</tr>
+<tr class="row-even"><td><p>200 m</p></td>
+<td><p>2-30</p></td>
+<td><p>25-65</p></td>
+<td><p>5-65</p></td>
+</tr>
+<tr class="row-odd"><td><p>400 m</p></td>
+<td><p>0-20</p></td>
+<td><p>10-55</p></td>
+<td><p>25-83</p></td>
+</tr>
+<tr class="row-even"><td><p>800 m</p></td>
+<td><p>0-5</p></td>
+<td><p>25-30</p></td>
+<td><p>65-83</p></td>
+</tr>
+<tr class="row-odd"><td><p>1500 m</p></td>
+<td><p>0-10</p></td>
+<td><p>15-20</p></td>
+<td><p>78-90</p></td>
+</tr>
+</tbody>
+</table>
+<p>¿Véis el problema? Yo creo que hay varios:</p>
+<ol class="arabic simple">
+<li><p><strong>No coinciden</strong>. El rango en el que se mueven es demasiado grande para resultar de utilidad. ¿Es el 200 libres una prueba eminentemente anaeróbica, o por el contrario prima el metabolismo aeróbico? Resulta imposible dar una respuesta particular, diferentes deportistas pueden llegar al mismo destino de formas distintas, ¿pero cómo es en general la prueba?</p></li>
+<li><p><strong>Usan distancias</strong>, en vez de tiempo. Esto puede ser práctico hablando en rasgos generales, pero no lo es, ni preciso, en casos concretos. Me atrevo a aventurar que la contribución del sistema ATP-PCr no es la misma para un 100 libres masculino en 46 segundos que para uno en 1 minuto y 10 segundos, aunque sea la misma distancia y estilo.</p></li>
+<li><p>No se puede inferir por la tabla, pero <strong>todos hablan exclusivamente de nado crol y en hombres.</strong> Durante el transcurso de este trabajo he intentado ofrecer una alternativa para los diferentes estilos, pero ya os advierto, spoilers, que no he encontrado como hacer frente al obstáculo de diferenciar entre sexo biológico. Sabemos que en mujeres la oxidación de lípidos se ve más favorecida frente a la de carbohidratos que en hombres, pero es una incógnita como se comportan respecto a los otros sistemas en natación. Creo que sería interesante saberlo, y también si esa diferencia es más o menos significativa que la normal entre individuos del mismo sexo.</p></li>
+</ol>
+</section>
+<section id="soluciones">
+<h2>¿Soluciones?<a class="headerlink" href="#soluciones" title="Link to this heading">#</a></h2>
+<section id="problema-1-discrepancias">
+<h3>1️⃣ Problema 1: discrepancias<a class="headerlink" href="#problema-1-discrepancias" title="Link to this heading">#</a></h3>
+<p>La primera que se me ocurrió: hacer una media. Lo solucionaría de un plumazo. Sin embargo este enfoque podría llevar a una falacia, ya que no tengo la certeza de que todos los estudios de estos autores tengan el mismo grado de validez. Si las fuentes no tienen el mismo grado de rigor metodológico, peso estadístico o contexto, por nombrar algunos factores, la media podría ser tan acertada como elegir un valor al azar en el correspondiente rango. Hacer un meta-análisis tampoco está sobre la mesa, me temo.</p>
+<p>¿Otra opción? El clásico de mamá y papá. Ten un favorito.</p>
+<p>En la literatura científica, y en especial en España y en el mundo de la natación en concreto, Fernando Navarro siempre es el primero en salir, pero yo me inclino, para este supuesto, por Rodríguez y Mader. En su artículo <em>Energy systems in swimming</em> presentan una simulación computacional de la participación de los sistemas energéticos en nadadores de élite masculinos, y lo que me parece muy importante y es en mi opinión un punto a su favor, <strong>incluyen marcas de tiempo</strong>:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Distancia</p></th>
+<th class="head"><p>Duración (min:s)</p></th>
+<th class="head"><p>ATP-PCr   (%)</p></th>
+<th class="head"><p>S. Glucolítico (%)</p></th>
+<th class="head"><p>S. Oxidativo (%)m</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>50 m</p></td>
+<td><p>0:22.0</p></td>
+<td><p>38</p></td>
+<td><p>58</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>100 m</p></td>
+<td><p>0:48.0</p></td>
+<td><p>20</p></td>
+<td><p>39</p></td>
+<td><p>41</p></td>
+</tr>
+<tr class="row-even"><td><p>200 m</p></td>
+<td><p>1:45.0</p></td>
+<td><p>13</p></td>
+<td><p>29</p></td>
+<td><p>58</p></td>
+</tr>
+<tr class="row-odd"><td><p>400 m</p></td>
+<td><p>3:45.0</p></td>
+<td><p>6</p></td>
+<td><p>21</p></td>
+<td><p>73</p></td>
+</tr>
+<tr class="row-even"><td><p>800 m</p></td>
+<td><p>7:50.0</p></td>
+<td><p>4</p></td>
+<td><p>14</p></td>
+<td><p>82</p></td>
+</tr>
+<tr class="row-odd"><td><p>1500 m</p></td>
+<td><p>14:50.0</p></td>
+<td><p>3</p></td>
+<td><p>11</p></td>
+<td><p>86</p></td>
+</tr>
+</tbody>
+</table>
+<p>Las distancias, como comenté antes, las voy a ignorar, pero ahora dispongo de valores concretos ubicados en un tiempo también concreto. Esto <strong>soluciona por completo el problema 1, y facilita mucho atajar el problema 2</strong>.</p>
+<section id="solucionado">
+<h4>✅ SOLUCIONADO<a class="headerlink" href="#solucionado" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="problema-2-esfuerzos-de-diferente-duracion">
+<h3>2️⃣ Problema 2: esfuerzos de diferente duración<a class="headerlink" href="#problema-2-esfuerzos-de-diferente-duracion" title="Link to this heading">#</a></h3>
+<p>Bien, sigamos. Pongamos una nadadora de 100 braza que tarda 1 minuto y 15 segundos. Esto es sensiblemente alejado del tiempo de esfuerzo al que se someten los nadadores masculinos de élite en la prueba de los 100 metros libres, pero no lo suficiente para que los registros de 200 metros tengan plena relevancia. Mi respuesta a esto ya se complica un poco, pero te invito a seguirme: la tabla anterior presenta diferentes valores para momentos concretos para cada uno de los sistemas energéticos. Lo que he hecho es modelar una función a partir de esos puntos. De esa forma puedo obtener el valor concreto para cualquier instante (tiempo) de la función. Si a alguien le interesa está hecho en MatLAB, con un R-square &gt;= 0.995.</p>
+<p>Por ejemplo, para el sistema ATP-PCr:</p>
+<p><img alt="image.png" src="attachment:eb93c68c-3af3-4f83-a62f-562ac00642e1.png" /></p>
+<p>Haciendo lo mismo para los demás sistemas obtengo las siguientes ecuaciones que modelan los sistemas energéticos a crol:</p>
+<blockquote>
+<div><p><strong>Sistema ATP-PCr:</strong> 424.1x^(-0.789) + 0.8296</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Sistema Glucolítico:</strong> 239.7x^(-0.4676) + 1.072</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Sistema Oxidativo:</strong> -585.6x^(-0.6017)+95.78</p>
+</div></blockquote>
+<p>donde la <em>x</em> representa el tiempo total de la prueba en segundos.</p>
+<p><strong>A continuación puedes obtener la contribución energética para cualquier tiempo, a crol, según el modelo de Rodríguez y Mader:</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculo de % de contribución de los Sistemas Energéticos para un nadador que realiza su prueba en un tiempo x (segundos)</span>
+
+<span class="n">tiempo</span> <span class="o">=</span> <span class="mi">75</span>
+
+<span class="n">pcr</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">424.1</span> <span class="o">*</span> <span class="p">(</span><span class="n">tiempo</span> <span class="o">**</span> <span class="o">-</span><span class="mf">0.789</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.8296</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">glu</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">239.7</span> <span class="o">*</span> <span class="p">(</span><span class="n">tiempo</span> <span class="o">**</span> <span class="o">-</span><span class="mf">0.4676</span><span class="p">)</span> <span class="o">+</span> <span class="mf">1.072</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">oxi</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="o">-</span><span class="mf">585.6</span> <span class="o">*</span> <span class="p">(</span><span class="n">tiempo</span> <span class="o">**</span> <span class="o">-</span><span class="mf">0.6017</span><span class="p">)</span> <span class="o">+</span> <span class="mf">95.78</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;ATP-PCr: </span><span class="si">{</span><span class="n">pcr</span><span class="si">}</span><span class="s2"> %&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Sistema Glucolitico: </span><span class="si">{</span><span class="n">glu</span><span class="si">}</span><span class="s2"> %&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Sistema Oxidativo: </span><span class="si">{</span><span class="n">oxi</span><span class="si">}</span><span class="s2"> %&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>ATP-PCr: 14.89 %
+Sistema Glucolitico: 32.91 %
+Sistema Oxidativo: 52.19 %
+</pre></div>
+</div>
+</div>
+</div>
+<section id="id1">
+<h4>✅ SOLUCIONADO<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+</section>
+</section>
+<section id="problema-3-diferentes-estilos">
+<h3>3️⃣ Problema 3: diferentes estilos<a class="headerlink" href="#problema-3-diferentes-estilos" title="Link to this heading">#</a></h3>
+<p>Ahora es cuando se complica todo. Yo me pregunto: ¿requiere la misma cantidad de energía nadar durante 75 segundos a crol que a braza? Y, en cualquier caso, ¿proviene esa energía de las mismas fuentes? Bueno, la primera respuesta es no, y la segunda, no se sabe. No existe en la literatura científica, o al menos no que yo haya podido encontrar, aproximaciones para los diferentes estilos como las que hemos visto anteriormente, pero sí sabemos, gracias a Capelli y colaboradores, que no requiere la misma cantidad de energía desplazarse a un estilo que a otro, y asumiendo aquí y allá podemos tratar de dar una respuesta, o al menos una aproximación, al dilema.</p>
+<p>Capelli establece el coste de nadar a los diferentes estilos mediante estas ecuaciones:</p>
+<blockquote>
+<div><p><strong>Mariposa:</strong> 0.234*10^(0.547x)</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Espalda:</strong> 0.270*10^(0.491x)</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Braza:</strong> 0.548*10^(0.355x)</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Crol:</strong> 0.228*10^(0.488x)</p>
+</div></blockquote>
+<p>representando la <em>x</em> el tiempo invertido en segundos.</p>
+<p><strong>A continuación puedes obtener el coste energético en KJ/m para cualquier estilo y distancia según el modelo de Capelli y colaboradores:</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ajusta el tiempo y la distancia para obtener el coste energético de desplazamiento a todos los estilos</span>
+
+<span class="n">tiempo</span> <span class="o">=</span> <span class="mi">75</span>
+<span class="n">distancia</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="n">velocidad</span> <span class="o">=</span> <span class="n">distancia</span><span class="o">/</span><span class="n">tiempo</span>
+<span class="n">gasto_mariposa</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">0.234</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span> <span class="o">**</span> <span class="p">(</span><span class="mf">0.547</span> <span class="o">*</span> <span class="n">velocidad</span><span class="p">))</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">gasto_espalda</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">0.270</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span> <span class="o">**</span> <span class="p">(</span><span class="mf">0.491</span> <span class="o">*</span> <span class="n">velocidad</span><span class="p">))</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">gasto_braza</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">0.548</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span> <span class="o">**</span> <span class="p">(</span><span class="mf">0.355</span> <span class="o">*</span> <span class="n">velocidad</span><span class="p">))</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">gasto_crol</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">0.228</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span> <span class="o">**</span> <span class="p">(</span><span class="mf">0.488</span> <span class="o">*</span> <span class="n">velocidad</span><span class="p">))</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">relat_mariposa</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(((</span><span class="n">gasto_mariposa</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="o">/</span><span class="n">gasto_crol</span><span class="p">)</span><span class="o">-</span><span class="mi">100</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">relat_espalda</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(((</span><span class="n">gasto_espalda</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="o">/</span><span class="n">gasto_crol</span><span class="p">)</span><span class="o">-</span><span class="mi">100</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">relat_braza</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(((</span><span class="n">gasto_braza</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="o">/</span><span class="n">gasto_crol</span><span class="p">)</span><span class="o">-</span><span class="mi">100</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Mariposa: </span><span class="si">{</span><span class="n">gasto_mariposa</span><span class="si">}</span><span class="s2"> KJ/m (+</span><span class="si">{</span><span class="n">relat_mariposa</span><span class="si">}</span><span class="s2"> %)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Espalda: </span><span class="si">{</span><span class="n">gasto_espalda</span><span class="si">}</span><span class="s2"> KJ/m (+</span><span class="si">{</span><span class="n">relat_espalda</span><span class="si">}</span><span class="s2"> %)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Braza: </span><span class="si">{</span><span class="n">gasto_braza</span><span class="si">}</span><span class="s2"> KJ/m (+</span><span class="si">{</span><span class="n">relat_braza</span><span class="si">}</span><span class="s2"> %)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Crol: </span><span class="si">{</span><span class="n">gasto_crol</span><span class="si">}</span><span class="s2"> KJ/m&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Mariposa: 1.25 KJ/m (+22.55 %)
+Espalda: 1.22 KJ/m (+19.61 %)
+Braza: 1.63 KJ/m (+59.8 %)
+Crol: 1.02 KJ/m
+</pre></div>
+</div>
+</div>
+</div>
+<p>Perfecto, le hemos puesto números. Las ecuaciones de Capelli nos confirman que el gasto de energía para la misma velocidad es <strong>muy diferente</strong> para los distintos estilos. Todos los que hemos nadado sabemos, obviamente, que no representa la misma intensidad un 100 braza en 75 segundos que un 100 libres, precisamente por esta razón.</p>
+<p>¿Tendríamos más precisión si comparamos intensidades relativas parecidas entonces? Esa es mi hipótesis. Una forma de comparar estilos en natación, aunque con muchas comillas, son Swimming Points. Si cogemos una prueba merecedora de, por ejemplo, 900 SP a braza y otra a crol, podríamos asumir que representan esfuerzos semejantes. Esto no es así, como desarrollaré más adelante, pero creo que es mejor que no hacer nada.</p>
+<p>De esta forma, el algoritmo completo sería:</p>
+<ol class="arabic simple">
+<li><p>Decidir el estilo y el tiempo de esfuerzo del que se quiere averiguar la contribución relativa de los sistemas energéticos.</p></li>
+<li><p>Calcular su coste energético por metro como hemos hecho en el punto anterior.</p></li>
+<li><p>Averiguar sus Swimming Points.</p></li>
+<li><p>Calcular la marca en la misma distancia pero a crol que es merecedora de la misma puntuación. Esto equipararía estilos si tuvieran el mismo gasto energético por metro.</p></li>
+<li><p>Repetir el punto 2 para la marca de crol.</p></li>
+<li><p>Calcular el % de diferencia en gasto energético a crol y al otro estilo para esas marcas equivalentes.</p></li>
+<li><p>Aumentar la marca de crol en ese %. Esto equipararía estilos bajo la hipótesis de que <strong>para gastar la misma cantidad de energía a crol debes realizar un esfuerzo de mayor duración.</strong></p></li>
+<li><p>Obtener la contribución de los sistemas energéticos para esta marca a través de las ecuaciones que modelan el trabajo de Rodríguez y Mader.</p></li>
+</ol>
+<p><strong>Este script representa todo ese proceso:</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Variables a modificar por el usuario</span>
+<span class="n">distancia</span> <span class="o">=</span> <span class="mi">100</span> <span class="c1"># en metros</span>
+<span class="n">tiempo</span> <span class="o">=</span> <span class="mi">75</span> <span class="c1"># en segundos\</span>
+<span class="n">estilo</span> <span class="o">=</span> <span class="s1">&#39;braza&#39;</span> 
+<span class="n">record_mundo_prueba_elegida</span> <span class="o">=</span> <span class="mf">64.13</span> <span class="c1"># en segundos</span>
+<span class="n">record_mundo_crol</span> <span class="o">=</span> <span class="mf">51.71</span> <span class="c1"># en segundos</span>
+
+<span class="c1"># 2. Calcular el coste energético:</span>
+<span class="n">velocidad</span> <span class="o">=</span> <span class="n">distancia</span><span class="o">/</span><span class="n">tiempo</span>
+<span class="k">if</span> <span class="n">estilo</span> <span class="o">==</span> <span class="s2">&quot;mariposa&quot;</span><span class="p">:</span>
+	<span class="n">gasto</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">0.234</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span> <span class="o">**</span> <span class="p">(</span><span class="mf">0.547</span> <span class="o">*</span> <span class="n">velocidad</span><span class="p">))</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">estilo</span> <span class="o">==</span> <span class="s2">&quot;espalda&quot;</span><span class="p">:</span>
+	<span class="n">gasto</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">0.270</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span> <span class="o">**</span> <span class="p">(</span><span class="mf">0.491</span> <span class="o">*</span> <span class="n">velocidad</span><span class="p">))</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">estilo</span> <span class="o">==</span> <span class="s2">&quot;braza&quot;</span><span class="p">:</span>
+	<span class="n">gasto</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">0.548</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span> <span class="o">**</span> <span class="p">(</span><span class="mf">0.355</span> <span class="o">*</span> <span class="n">velocidad</span><span class="p">))</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">estilo</span> <span class="o">==</span> <span class="s2">&quot;crol&quot;</span><span class="p">:</span>
+	<span class="n">gasto</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">0.228</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span> <span class="o">**</span> <span class="p">(</span><span class="mf">0.488</span> <span class="o">*</span> <span class="n">velocidad</span><span class="p">))</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># 3. Averiguar valor en Swimming Points:</span>
+<span class="n">SP1</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mi">1000</span><span class="o">*</span><span class="p">(</span><span class="n">record_mundo_prueba_elegida</span><span class="o">/</span><span class="n">tiempo</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># 4. Calcular la marca en la misma distancia pero a crol que es merecedora de la misma puntuación:</span>
+<span class="n">tiempo_crol</span> <span class="o">=</span> <span class="n">record_mundo_crol</span>
+<span class="n">SP2</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mi">1000</span><span class="o">*</span><span class="p">(</span><span class="n">record_mundo_crol</span><span class="o">/</span><span class="n">tiempo_crol</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="n">SP2</span> <span class="o">&gt;</span> <span class="n">SP1</span><span class="p">:</span>
+	<span class="n">SP2</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mi">1000</span><span class="o">*</span><span class="p">(</span><span class="n">record_mundo_crol</span><span class="o">/</span><span class="n">tiempo_crol</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+	<span class="n">tiempo_crol</span> <span class="o">+=</span> <span class="mf">0.01</span>
+
+<span class="c1"># 5. Repetir punto 2 para la marca de crol:</span>
+<span class="n">velocidad_crol</span> <span class="o">=</span> <span class="n">distancia</span><span class="o">/</span><span class="n">tiempo_crol</span>
+<span class="n">gasto_crol</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">0.228</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span> <span class="o">**</span> <span class="p">(</span><span class="mf">0.488</span> <span class="o">*</span> <span class="n">velocidad_crol</span><span class="p">))</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># 6. Calcular el % de diferencia en gasto energético a crol y al otro estilo:</span>
+<span class="n">diferencia</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(((</span><span class="n">gasto</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span><span class="o">/</span><span class="n">gasto_crol</span><span class="p">)</span><span class="o">-</span><span class="mi">100</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># 7. Aumentar la marca de crol en ese %:</span>
+<span class="n">tiempo_crol</span> <span class="o">=</span> <span class="n">tiempo_crol</span> <span class="o">+</span> <span class="n">tiempo_crol</span><span class="o">*</span><span class="p">(</span><span class="n">diferencia</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># 8. Obtener la contribución de los sistemas energéticos para esta marca:</span>
+<span class="n">pcr</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">424.1</span> <span class="o">*</span> <span class="p">(</span><span class="n">tiempo_crol</span> <span class="o">**</span> <span class="o">-</span><span class="mf">0.789</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.8296</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">glu</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">239.7</span> <span class="o">*</span> <span class="p">(</span><span class="n">tiempo_crol</span> <span class="o">**</span> <span class="o">-</span><span class="mf">0.4676</span><span class="p">)</span> <span class="o">+</span> <span class="mf">1.072</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">oxi</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="o">-</span><span class="mf">585.6</span> <span class="o">*</span> <span class="p">(</span><span class="n">tiempo_crol</span> <span class="o">**</span> <span class="o">-</span><span class="mf">0.6017</span><span class="p">)</span> <span class="o">+</span> <span class="mf">95.78</span> <span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Marca equivalente a crol: </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">tiempo_crol</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s2"> s&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;ATP-PCr: </span><span class="si">{</span><span class="n">pcr</span><span class="si">}</span><span class="s2"> %&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Sistema Glucolitico: </span><span class="si">{</span><span class="n">glu</span><span class="si">}</span><span class="s2"> %&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Sistema Oxidativo: </span><span class="si">{</span><span class="n">oxi</span><span class="si">}</span><span class="s2"> %&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Marca equivalente a crol: 67.52 s
+ATP-PCr: 16.11 %
+Sistema Glucolitico: 34.51 %
+Sistema Oxidativo: 49.35 %
+</pre></div>
+</div>
+</div>
+</div>
+<section id="id2">
+<h4>✅ SOLUCIONADO<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+</section>
+</section>
+</section>
+<section id="aplicaciones-practicas">
+<h2>Aplicaciones prácticas<a class="headerlink" href="#aplicaciones-practicas" title="Link to this heading">#</a></h2>
+<p>En mi opinión resulta crucial acercarse lo máximo posible a la verdad en este tema, y voy a poner un ejemplo muy sencillo de por qué y cómo se puede usar este método.</p>
+<p>Imagina una periodización ATR o una por bloques. Citando de nuevo a Navarro, él nos propone organizar los contenidos para las pruebas de 100 metros de esta forma:</p>
+<blockquote>
+<div><p><strong>Preparación Básica:</strong> 4 puntos de importancia a la PALA, 3 a AEL, AEM, PAE, AFG, FMI, FMH y FLEX, y 2 para AFG.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Preparación Específica:</strong> 5 puntos de importancia para PLA y RFLA, 4 puntos para CALA, FEC, FEA, RFAL-LA y 3 para CLA.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Preparación Competitiva:</strong> Exclusividad en CLA, PLA y CALA.</p>
+</div></blockquote>
+<p>Navarro llega a esta conclusión porque asigna un 55% a la glucólisis anaeróbica y un 35% al metabolismo aeróbico, calculado para una duración estimada de entre 40 y 60 segundos a crol. <strong>Es tremendamente lógico, pero puede no ser nuestro caso.</strong> Según los cálculos anteriores hay una diferencia de casi un 20% en glucólisis anaeróbica y de un 15% en el componente aeróbico. Si nos guiamos por esto, yo propondría, para esta deportista en concreto, trasladar la Potencia AEróbica al bloque de preparación específico, pues parece esencial para el rendimiento en la prueba. También sustituiría la CALA por PAE en la preparación competitiva.</p>
+<p>Esto es un ejemplo para una prueba de 100 metros, pero creo que incluso puede ser más llamativo en pruebas de 200 donde las diferencias serán aún mayores.</p>
+</section>
+<section id="limitaciones">
+<h2>⛔ Limitaciones<a class="headerlink" href="#limitaciones" title="Link to this heading">#</a></h2>
+<p>Todo esto está cogido con muchas pinzas. Se basa en una serie de axiomas y asunciones que no tienen por qué ser válidos, a saber:</p>
+<ol class="arabic simple">
+<li><p>El modelo computerizado de Rodríguez y Mader representa correctamente la interacción de los sistemas energéticos a lo largo del tiempo en natación.</p></li>
+<li><p>Las ecuaciones de Capelli son por lo general correctas para la mayoría de deportistas. La biomecánica, antropometría y otros muchos factores pueden alterar el coste energético del nado de un deportista concreto.</p></li>
+<li><p>Los Swimming Points sirven para equiparar rendimiento. No lo son. Lo único que tienen en cuenta para el cálculo son los récords del mundo, y asumen que los récords de todos los eventos representan el mismo nivel de dificultad. No es así. El 200 libres de Biedermann en 2009 (1.42.00) aún sigue vigente, mientras que el récord del mundo de 200 braza masculino de Christian Springer de la misma época  (2.07.31) ha sido batido 48 veces desde entonces a la fecha de redacción de estas palabras.</p></li>
+<li><p>La contribución de los sistemas energéticos a intensidades similares es la misma en mujeres que en hombres.</p></li>
+</ol>
+</section>
+<section id="conclusiones">
+<h2>Conclusiones<a class="headerlink" href="#conclusiones" title="Link to this heading">#</a></h2>
+<p>Pese a que creo que este es un asunto que damos por básico, contenido aprendido, en mi opinión estamos lejos de caracterizar correctamente y con consenso los distintos esfuerzos a los que el global de los nadadores se enfrentan. No podremos hacerlo hasta que podamos medirlo de forma individual, pero pienso que no deberíamos conformarnos con el cuerpo de conocimiento en este área en su estado actual.</p>
+<p>Este ha sido mi humilde método para tratar de acercarme un poco más a lo que creo que debe ser la verdad. He intentado tener en cuenta los factores más básicos que creo que pueden influir, pero hay muchos obstáculos y pocas certezas. Pese a todo, creo que es posible que los cálculos efectuados estén más cerca de la verdad que simplemente coger el valor correspondiente de alguna distancia de crol y darlo por bueno.</p>
+<p>Si has llegado hasta aquí, y has hecho el esfuerzo de intentar comprender y razonar conmigo, te estoy muy agradecido. Estaré encantado de saber tu opinión en este asunto o cualquier otro que quieras compartir.</p>
+<p>David Primo Cubel.</p>
+</section>
+<section id="bibliografia">
+<h2>Bibliografía<a class="headerlink" href="#bibliografia" title="Link to this heading">#</a></h2>
+<p>Capelli, C., Pendergast, D., &amp; Termin, B. (1998). Energetics of swimming at maximal speeds in humans. European Journal of Applied Physiology and Occupational Physiology, 78, 385–393. <a class="reference external" href="https://doi.org/10.1007/s004210050435">https://doi.org/10.1007/s004210050435</a></p>
+<p>Navarro, F., &amp; Oca, A. (2010). Entrenamiento físico de natación. Real Federación Española de Natación.</p>
+<p>Navarro, F., Oca, A., &amp; Rivas, A. (2010). Planificación del entrenamiento y su control. Real Federación Española de Natación.</p>
+<p>Pyne, D., &amp; Sharp, R. (2014). Physical and Energy Requirements of Competitive Swimming Events. International Journal of Sport Nutrition and Exercise Metabolism, 24. <a class="reference external" href="https://doi.org/10.1123/ijsnem.2014-0047">https://doi.org/10.1123/ijsnem.2014-0047</a></p>
+<p>Rodríguez, F., &amp; Mader, A. (2011). Energy systems in swimming. In World book of swimming: From science to performance (pp. 225–240). Nova Science Publishers. <a class="reference external" href="https://doi.org/10.13140/2.1.3260.5128">https://doi.org/10.13140/2.1.3260.5128</a></p>
+<p>Toussaint, H. M., &amp; Hollander, A. P. (1994). Energetics of competitive swimming. Implications for training programmes. Sports Medicine (Auckland, N.Z.), 18(6), 384–405. <a class="reference external" href="https://doi.org/10.2165/00007256-199418060-00004">https://doi.org/10.2165/00007256-199418060-00004</a></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sistemas-energeticos">Sistemas Energéticos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#controversia">Controversia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soluciones">¿Soluciones?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-1-discrepancias">1️⃣ Problema 1: discrepancias</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#solucionado">✅ SOLUCIONADO</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-2-esfuerzos-de-diferente-duracion">2️⃣ Problema 2: esfuerzos de diferente duración</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">✅ SOLUCIONADO</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#problema-3-diferentes-estilos">3️⃣ Problema 3: diferentes estilos</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">✅ SOLUCIONADO</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicaciones-practicas">Aplicaciones prácticas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limitaciones">⛔ Limitaciones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusiones">Conclusiones</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliografia">Bibliografía</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
